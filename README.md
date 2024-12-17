@@ -34,7 +34,6 @@ L'objectif est de proposer un client simple, modulaire et robuste capable d'effe
 | **`getaddrinfo.c`**    | Résout l'adresse IP et le port avec `getaddrinfo`. Crée également le **socket UDP** pour la communication. |
 | **`tftp_rrq.c`**       | Implémente l'envoi de la requête **RRQ** et gère la réception des **DATA**.    |
 | **`tftp_wrq.c`**       | Implémente l'envoi de la requête **WRQ** et des blocs **DATA**.               |
-| **`tftp_ack.c`**       | Gère l'envoi et la validation des **ACK** pour les paquets de données.        |
 
 ---
 
@@ -43,4 +42,4 @@ L'objectif est de proposer un client simple, modulaire et robuste capable d'effe
 
 Pour compiler le projet:  
 ```bash
-gcc -o tftp_client main.c getaddrinfo.c tftp_rrq.c tftp_wrq.c tftp_ack.c -Wall
+gcc -o tftp_client main.c getaddrinfo.c tftp_rrq.c tftp_wrq.c 
